@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float">
+
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+<body class="font-effect-shadow-multiple|3d-float">
+    <nav class="navbar navbar-light sticky-top">
+        <div class="container-fluid">
+        <div class="navbar-brand">
+            <p id="date"></p>
+        </div>
+        <div class="navbar-item"><h4>JS EXERCISE</h4></div>
+        <div class="navbar-brand">
+            <p id="time"></p>
+        </div>
+    </div>
+    </nav>
+    <div class="container padding">
+<section class="center padding">
+        <h1>THE STOPWATCH</h1>
+        <h1 id="stopwatch" class="padding">
+            <span id="hour">00</span> :
+            <span id="min">00</span> :
+            <span id="sec">00</span> :
+            <span id="milsec">00</span>
+        </h1>
+        <button name="start" class="paddingbtn btn btn-outline-light" onclick="start()">START</button>
+        <button name="stop" class="paddingbtn btn btn-outline-light" onclick="stop()">STOP</button>
+        <button name="resume" class="paddingbtn btn btn-outline-light" onclick="resume()">RESUME</button>
+        <button name="rsest" class="paddingbtn btn btn-outline-light" onclick="reset()">RESET</button>
+</section>
+</div>
+
+<section class="center padding">
+    <h1>DYNAMIC TABLE</h1>
+    <div class="padding1">
+        <input class="paddingform" type="text" id="FirstName" placeholder="FIRST NAME">
+        <input class="paddingform" type="text" id="LastName" placeholder="LAST NAME">
+        <button class="paddingform btn btn-outline-light" id="add" onclick="add()">ADD</button>
+        <button class="paddingform btn btn-outline-light" id="staticdata" onclick="staticData()">Populate Table</button>    
+    </div>
+    <div class="padding">
+        <table id="table"></table>
+    </div>
+</section>
+<footer class="page-footer font-small">
+
+   
+    <div class="footer-copyright text-center py-">© DarshanVesatiya
+    </div>
+     
+  </footer>
+</body>
+</html>
