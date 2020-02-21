@@ -13,43 +13,40 @@ function newUser() {
     else if (!email.match(regex)) {
         alert("Enter Valid Email Address");
     }
-    else if(pswd.length===0 || cnfmpswd===0){
+    else if(pswd.length===0 || cnfmpswd.length===0){
         alert("Please fill empty fields");
     }
     else{
         if(pswd === cnfmpswd){
-            let role = document.querySelector('input[name="inlineRadioOptions"]:checked').value;
-            if(localStorage.getItem("user") !== null){
-            
-                let obj = JSON.parse(localStorage["user"]);
-                
+                let role = document.querySelector('input[name="inlineRadioOptions"]:checked').value;
+                if(localStorage.getItem("user")==undefined){
+                   
+                                    let credentials=[];
+                                    let obj={};
+                                    credentials.push(name,email,pswd,role);
+                                    obj[email]=credentials;
+                                    localStorage["user"]=JSON.stringify(obj);
+                                    if(confirm("USER IS SUCCESSFULLY CREATED.") || !confirm("USER IS SUCCESSFULLY CREATED."))
+                                    window.location.href="../html/login.html";
+        
+                }else{
+                    let obj = JSON.parse(localStorage["user"]);
                     if(obj.hasOwnProperty(email)){
-                            alert("This user is already exists, try with another Email");
-                    }
-                    else{
-                            let credentials=[];
-                            credentials.push(name,email,pswd,role);
-                            obj[email]=credentials;
-                            localStorage["user"]=JSON.stringify(obj);
-                            if(confirm("USER IS SUCCESSFULLY CREATED.") || !confirm("USER IS SUCCESSFULLY CREATED."))
-                            window.location.href="../html/login.html";
-
-                    }
-            }
-            else{
-                            let credentials=[];
-                            credentials.push(name,email,pswd,role);
-                            obj[email]=credentials;
-                            localStorage["user"]=JSON.stringify(obj);
-                            if(confirm("USER IS SUCCESSFULLY CREATED.") || !confirm("USER IS SUCCESSFULLY CREATED."))
-                            window.location.href="../html/login.html";
-
-            }
-        }else{
-            alert("password and confirm password doesn't match");   
+                        alert("This user is already exists, try with another Email");
+                    }else{
+                        let credentials=[];
+                        credentials.push(name,email,pswd,role);
+                        obj[email]=credentials;
+                        localStorage["user"]=JSON.stringify(obj);
+                        if(confirm("USER IS SUCCESSFULLY CREATED.") || !confirm("USER IS SUCCESSFULLY CREATED."))
+                        window.location.href="../html/login.html";
+                    }   
+                }
+            }else{
+                alert("password and confirm password doesn't match");   
         }
     }
-}    
+}     
 function isEmpty(obj) {
     for(var prop in obj) {
         if(obj.hasOwnProperty(prop))
