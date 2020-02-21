@@ -1,0 +1,34 @@
+body {
+    background: #76b852;     
+    font-family: "Roboto", sans-serif;
+  }
+.container{
+    margin-top: 250px;
+    text-align: center;
+}
+form{
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.icon{
+    color: #76b852;
+}
+.form-control{
+    width: fit-content; 
+}
+.btnmargin{
+    margin: 10px;
+}
+.svg-inline--fa{
+    height: 2.5em;
+}
+.svg-inline--fa.fa-w-16{
+    width: 2.5em;
+}
+

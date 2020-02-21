@@ -1,0 +1,40 @@
+body{
+    background-color: #f2f2f2;
+}
+.navbar{
+    background-color:#72b852;
+    height: auto;
+    width: auto;
+    box-shadow: 0px 1px 10px #999 ;
+}
+.btn-link{
+    color: whitesmoke;
+    display: inline;
+}
+.navbar-brand > h5{
+    display: inline;
+    color: whitesmoke;
+}
+.dashboard{
+    background-color: #6fb54a;
+    color: whitesmoke;
+}
+#dash{
+    margin-top: 6px;
+}
+.card-img-top{
+    height: 180px;
+    width: 348px;
+}
+.cardscontainer{
+    margin-top: 25px;
+    padding: 0px;
+    padding-bottom: 85px;
+    background-color: white;
+}
+.card-title{
+    text-align: center;
+}
+.btn-primary{
+    width: 100%;
+}

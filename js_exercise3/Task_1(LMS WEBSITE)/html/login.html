@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="../CSS/login.css" rel="stylesheet">
+    <script src="../JS/app.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Rapidops</title>
+    <link rel = "icon" href ="../Images/overleaf_og_logo.png"  type = "image/x-icon"> 
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="icon btnmargin">
+                <i class="far fa-user"></i>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email_login" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password_login" placeholder="Password">
+            </div>
+            <div class="btnmargin">
+            <button type="submit" class="btn" style="background-color: #76b852;color: whitesmoke;" onclick="authenticateUser()">Login</button>
+            </div>
+            <p>New Around here ? <a href="signup.html" style="color: #76b852;">Sign up</a></p>
+          </form>    
+    </div>
+</body>
+</html>

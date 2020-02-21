@@ -10,11 +10,7 @@ window.onload = function(){
 }
 
 function unionOf(arr1,arr2){
-    for(let i=0;i<arr2.length;i++){
-        arr1.push(arr2[i]);
-    }
-    arr1 = new Set(arr1);
-    return Array.from(arr1);
+	return Array.from(new Set([...arr1,...arr2]));
 }
 function diff(arr1,arr2){
     for(let i=0;i<arr1.length;i++){
