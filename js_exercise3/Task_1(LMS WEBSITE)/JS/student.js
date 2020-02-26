@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------------CHECKING ADMIN OR STUDENT LOGGED IN--------------------------------------------------------------------------------------*/
 let user;
 function getUser(){
-    if (localStorage.getItem("activeuser").length < 3) {
+    if (localStorage.getItem("activeuser")==undefined || localStorage.getItem("tempuser1")==undefined ||localStorage.getItem("activeuser").length < 3) {
         window.location.href = "../html/login.html";
     }
     else{
@@ -31,7 +31,7 @@ function Logout(){
    delete users[user];
    user=undefined;
    localStorage["activeuser"]=JSON.stringify(users);
-   localStorage.removeItem("tempuser");
+   localStorage.removeItem("tempuser1");
    window.location.href="../html/login.html";
 }
 

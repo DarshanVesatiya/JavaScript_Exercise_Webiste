@@ -1,4 +1,4 @@
-// localStorage["user"]=JSON.stringify({"darshan.vesatiya@rapidops.com":["Darshan Vesatiya","darshan.vesatiya@rapidops.com","Darshan@123","admin"]});
+
 /*------------------------------------------------------------------SIGNUP---------------------------------------------------------------------------------------*/
 
 function newUser() {
@@ -26,7 +26,7 @@ function newUser() {
                                     credentials.push(name,email,pswd,role);
                                     obj[email]=credentials;
                                     localStorage["user"]=JSON.stringify(obj);
-                                    if(confirm("USER IS SUCCESSFULLY CREATED.") || !confirm("USER IS SUCCESSFULLY CREATED."))
+                                    alert("USER IS SUCCESSFULLY CREATED.");
                                     window.location.href="../html/login.html";
         
                 }else{
@@ -38,7 +38,7 @@ function newUser() {
                         credentials.push(name,email,pswd,role);
                         obj[email]=credentials;
                         localStorage["user"]=JSON.stringify(obj);
-                        if(confirm("USER IS SUCCESSFULLY CREATED.") || !confirm("USER IS SUCCESSFULLY CREATED."))
+                        alert("USER IS SUCCESSFULLY CREATED.");
                         window.location.href="../html/login.html";
                     }   
                 }
@@ -75,10 +75,10 @@ function authenticateUser(){
                             localStorage["activeuser"]=JSON.stringify(obj);
                             if(users[email][3]==="admin"){
                                 localStorage["tempuser"]=JSON.stringify(users[email][1]);
-                                window.location.href="adminhome.html";
+                                window.location.href="../html/adminhome.html";
                             }else{
                                 localStorage["tempuser1"]=JSON.stringify(users[email][1]);
-                                window.location.href="studenthome.html";
+                                window.location.href="../html/studenthome.html";
                             }
                     }else{
                             let credentials=[];let obj={};
@@ -87,10 +87,10 @@ function authenticateUser(){
                             localStorage["activeuser"]=JSON.stringify(obj);
                             if(users[email][3]==="admin"){
                                 localStorage["tempuser"]=JSON.stringify(users[email][1]);
-                                window.location.href="adminhome.html";
+                                window.location.href="../html/adminhome.html";
                             }else{
                                 localStorage["tempuser1"]=JSON.stringify(users[email][1]);
-                                window.location.href="studenthome.html";
+                                window.location.href="../html/studenthome.html";
                             }
                     }
                 }
