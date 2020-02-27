@@ -1,0 +1,48 @@
+#box1{
+    height: 100px;
+    width: 150px;
+    background-color: lightblue;
+    position: relative;
+    border-style: ridge;
+    border-width: thin;
+    text-align: center;
+}
+#first{
+    margin-top: 25px;
+}
+#box2{
+    height: 100px;
+    width: 150px;
+    background-color: lightblue;
+    position: relative;
+    border-style: ridge;
+    border-width: thin;
+    text-align: center;
+}
+#sec{
+    margin-top: 45px;
+}
+#box3{
+    height: 100px;
+    width: 150px;
+    background-color: lightblue;
+    position: relative;
+    border-style: ridge;
+    border-width: thin;
+    text-align: center;
+}
+#third{
+    margin-top: 25px;
+}
+#box4{
+    height: 100px;
+    width: 150px;
+    background-color: lightblue;
+    position: relative;
+    border-style: ridge;
+    border-width: thin;
+    text-align: center;
+}
+#four{
+    margin-top: 45px;
+}
