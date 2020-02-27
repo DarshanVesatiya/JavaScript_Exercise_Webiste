@@ -1,4 +1,4 @@
-// alert("Box 1 will show text 'Click Me First' and Box 2 will start changing its colors in every 3 sec.");
+alert("Box 1 will show text 'Click Me First' and Box 2 will start changing its colors in every 3 sec.");
 let colors = ['purple','grey','blue','green','yellow','orange','red'];
 let i=0,j=0,k=0,temp,cnt=0;
 
@@ -15,10 +15,7 @@ function clrchange(colors){
     else if(j<0)
         j=6;        
     document.getElementById("box4").style.backgroundColor=colors[j];
-    if(k==1)
-        j++;
-    else
-        j--;           
+    (k==1) ? j++ : j--;          
 }
 
 window.onload = function(){
